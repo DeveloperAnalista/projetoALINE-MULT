@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="estilo.css">
+  </head>
+  <body>
+    <script src="scripts.js"></script>
+    
+  </body>
+</html>
+
+var carroFabricate = "fiat";
+var carroModelo = "uno";
+var carroCor = "prata";
+var carro2Fabricante = "fiat";
+var carro2Modelo = "toro";
+var carroCor = "prata";
+
+var carro = [];
+ carro ["fabricante"] = "fiat";
+ carro ["modelo"] = "uno";
+ carro ["cor"] = "prata";
+
+console.log(carro);
+
+var carro = 
+{
+	fabricante: "fiat",
+	modelo:"uno",
+	cor: "prata",
+	ano: "2015",
+	nomeCompleto: function ()
+	{
+	imprima(this.fabricante + " " + this.modelo + " " );
+}}
+imprima(carro.cor)
+console.log(carro);
+
+var celta = new Carro("Chevrolet","celta","verde", 2015);
+
+celta.nomeCompleto();
+console.log (celta);
+
+function Carro(fabricante, modelo, cor, ano) {
+		this.fabricante = fabricante;
+		this.modelo = modelo;
+		this.cor = cor;
+		this.ano = ano;
+		this.nomeCompleto = function () {
+
+
+			imprima(this.fabricante, + " " + this.modelo + " " +  this.cor + " " +  this.ano);
+		};
+	}
+console.log (carro);
+
+
+function Cliente(nome, sobrenome, telefone, email){
+
+	this.nome = nome;
+	this.sobrenome = sobrenome;
+	this.telefone = telefone;
+	this.email = email;
+	this.fichaCliente = function()
+		{
+			imprima("Nome:"  + this.nome + " " + this.sobrenome);
+			imprima("Telefone: " + this.sobrenome);
+			imprima("E-mail:" + this.email)
+
+	}}
+
+
+	let Clientes = new Array();
+
+Clientes.push( new Cliente("Rafaela", "Assis","---","==="));
+Clientes.push(new Cliente("Fernada","Gualberto","234-5678","fernada gualberto.com"));
+Clientes.push(new Cliente("Nayara","Fonseca","1478-6321", "NayaraFonseca.com"));
+
+for(linha of Clientes)
+{
+	linha.fichaCliente();
+	imprima("");
+}
+
+html {
+    background-image: linear-gradient( #202124, #000);
+    background-attachment: fixed;
+    height: 100%;
+}
+body {
+    margin: 10%;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 120%;
+    color: #fff;
+}
